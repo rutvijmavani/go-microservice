@@ -1,0 +1,78 @@
+# =========================
+# Go build artifacts
+# =========================
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Go test binaries
+*.test
+
+# Go coverage files
+*.out
+coverage.*
+profile.cov
+
+# =========================
+# Binaries & build output
+# =========================
+bin/
+dist/
+build/
+out/
+
+# =========================
+# Go workspace / modules
+# =========================
+go.work
+go.work.sum
+
+# Vendor (ignore if not committing vendor/)
+vendor/
+
+# =========================
+# IDEs & Editors
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.bak
+
+# =========================
+# OS-specific
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs
+# =========================
+*.log
+logs/
+
+# =========================
+# Environment / secrets
+# =========================
+.env
+.env.*
+config.local.yaml
+config.local.json
+secrets/
+*.key
+*.pem
+
+# =========================
+# Temporary files
+# =========================
+tmp/
+temp/
+*.tmp
+
+# =========================
+# Debugging
+# =========================
+__debug_bin
