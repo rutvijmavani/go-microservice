@@ -41,7 +41,7 @@ vendor/
 *.swo
 *.swn
 *.bak
-
+.vs/
 
 # =========================
 # OS-specific
