@@ -24,18 +24,26 @@ var genMetadata = &gen.Metadata{
 	Director:    "Foo Bars",
 }
 
+// serializeToJSON serializes the given Metadata to JSON and returns the encoded bytes.
+// It returns an error if encoding fails.
 func serializeToJSON(m *model.Metadata) ([]byte, error) {
 	return json.Marshal(m)
 }
 
+// serializeToXML marshals the provided Metadata value to XML and returns the resulting bytes.
+// It returns an error if the marshaling fails.
 func serializeToXML(m *model.Metadata) ([]byte, error) {
 	return xml.Marshal(m)
 }
 
+// serializeToProto serializes the provided gen.Metadata into protobuf-encoded bytes.
+// It returns the encoded bytes or an error if marshaling fails.
 func serializeToProto(m *gen.Metadata) ([]byte, error) {
 	return proto.Marshal(m)
 }
 
+// main constructs example metadata, serializes it to JSON, XML, and Protobuf,
+// and prints the resulting byte sizes. It panics if any serialization fails.
 func main() {
 	jsonBytes, err := serializeToJSON(metadata)
 	if err != nil {
